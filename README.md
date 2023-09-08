@@ -11,7 +11,9 @@ Este é um exemplo de implementação de algoritmos de busca em largura (BFS) e 
 3. Execute o código Python:
 
     python nome_do_arquivo.py
-   
+
+1. O código inclui um exemplo de uso que cria um grafo, adiciona algumas arestas de exemplo e encontra as componentes conexas usando BFS e DFS. Os resultados serão impressos no terminal.
+
 ##  Detalhes da Implementação
 A classe Grafo é usada para criar e manipular o grafo.
 O método adicionar_aresta(u, v) permite adicionar arestas ao grafo entre os vértices u e v.
