@@ -52,7 +52,6 @@ class Grafo:
 
         return componentes
 
-
 g = Grafo()
 g.adicionar_aresta(0, 1)
 g.adicionar_aresta(0, 2)
