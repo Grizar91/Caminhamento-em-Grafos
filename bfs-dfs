@@ -1,0 +1,67 @@
+from collections import defaultdict
+
+class Grafo:
+    def __init__(self):
+        self.grafo = defaultdict(list)
+
+    def adicionar_aresta(self, u, v):
+        self.grafo[u].append(v)
+        self.grafo[v].append(u)
+
+    def busca_em_largura(self, vertice, componente):
+        fila = [vertice]
+        visitados = set()
+        visitados.add(vertice)
+
+        while fila:
+            u = fila.pop(0)
+            componente.append(u)
+
+            for vizinho in self.grafo[u]:
+                if vizinho not in visitados:
+                    visitados.add(vizinho)
+                    fila.append(vizinho)
+
+    def busca_em_profundidade(self, vertice, componente):
+        visitados = set()
+
+        def dfs(u):
+            componente.append(u)
+            visitados.add(u)
+
+            for vizinho in self.grafo[u]:
+                if vizinho not in visitados:
+                    dfs(vizinho)
+
+        dfs(vertice)
+
+    def encontrar_componentes_conexas(self):
+        visitados = set()
+        componentes = []
+
+        for vertice in self.grafo:
+            if vertice not in visitados:
+                componente_bfs = []
+                componente_dfs = []
+
+                self.busca_em_largura(vertice, componente_bfs)
+                self.busca_em_profundidade(vertice, componente_dfs)
+
+                visitados.update(componente_bfs)
+                componentes.append((componente_bfs, componente_dfs))
+
+        return componentes
+
+
+# Exemplo de uso:
+g = Grafo()
+g.adicionar_aresta(0, 1)
+g.adicionar_aresta(0, 2)
+g.adicionar_aresta(1, 3)
+g.adicionar_aresta(4, 5)
+
+componentes_conexas = g.encontrar_componentes_conexas()
+print("Componentes Conexas:")
+for i, (bfs, dfs) in enumerate(componentes_conexas):
+    print(f"Componente {i + 1} (BFS): {bfs}")
+    print(f"Componente {i + 1} (DFS): {dfs}")
