@@ -14,7 +14,7 @@ Este é um exemplo de implementação de algoritmos de busca em largura (BFS) e 
    python nome_do_arquivo.py
 
 
-   Exemplo de Uso
+ ##  Exemplo de Uso
 g = Grafo()
 g.adicionar_aresta(0, 1)
 g.adicionar_aresta(0, 2)
