@@ -27,7 +27,7 @@ for i, (bfs, dfs) in enumerate(componentes_conexas):
     print(f"Componente {i + 1} (BFS): {bfs}")
     print(f"Componente {i + 1} (DFS): {dfs}")
     
-    Contribuições
+ ##  Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) ou enviar solicitações de pull (pull requests) com melhorias ou correções.
 
 Lembre-se de substituir `nome_do_arquivo.py` pelo nome real do arquivo que contém seu código. Este é um exemplo básico de README.md, e você pode personalizá-lo
