@@ -21,8 +21,12 @@ Os métodos busca_em_largura(vertice, componente) e busca_em_profundidade(vertic
 O método encontrar_componentes_conexas() encontra todas as componentes conexas do grafo.
 
 ##  Exemplo de Uso
-![image](https://github.com/Grizar91/Caminhamento-em-Grafos/assets/143652037/7a2157e9-24d6-4f63-a817-8261b8d6ab9b)
+
+![Exemple](https://github.com/Grizar91/Caminhamento-em-Grafos/assets/143652037/258260f0-d34d-4adc-ae4b-05142db458b0)
 
     
  ##  Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) ou enviar solicitações de pull (pull requests) com melhorias ou correções.
+
+Lembre-se de substituir `nome_do_arquivo.py` pelo nome real do arquivo que contém seu código. Este é um exemplo básico de README.md, e você pode personalizá-lo
+e adicionar mais informações relevantes conforme necessário.
