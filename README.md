@@ -21,17 +21,8 @@ Os métodos busca_em_largura(vertice, componente) e busca_em_profundidade(vertic
 O método encontrar_componentes_conexas() encontra todas as componentes conexas do grafo.
 
 ##  Exemplo de Uso
-g = Grafo()
-g.adicionar_aresta(0, 1)
-g.adicionar_aresta(0, 2)
-g.adicionar_aresta(1, 3)
-g.adicionar_aresta(4, 5)
+![image](https://github.com/Grizar91/Caminhamento-em-Grafos/assets/143652037/7a2157e9-24d6-4f63-a817-8261b8d6ab9b)
 
-componentes_conexas = g.encontrar_componentes_conexas()
-print("Componentes Conexas:")
-for i, (bfs, dfs) in enumerate(componentes_conexas):
-    print(f"Componente {i + 1} (BFS): {bfs}")
-    print(f"Componente {i + 1} (DFS): {dfs}")
     
  ##  Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) ou enviar solicitações de pull (pull requests) com melhorias ou correções.
