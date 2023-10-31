@@ -63,3 +63,4 @@ print("Componentes Conexas:")
 for i, (bfs, dfs) in enumerate(componentes_conexas):
     print(f"Componente {i + 1} (BFS): {bfs}")
     print(f"Componente {i + 1} (DFS): {dfs}")
+
